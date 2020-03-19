@@ -1,0 +1,292 @@
+body {
+    background-color: #fff;
+    margin: 0;
+    color: #000;
+    font-size: 16px;
+    background-image: url(images/utanTitel1.jpg)
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Major Mono Display', monospace;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h4 {
+    font-size: 1.12em;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+a:link {
+    color: #000;
+}
+
+a:visited {
+    color: #000;
+}
+
+.evaStrinnoDiv {
+    background-color: #fff;
+    grid-area: evaStrinno;
+    border-right: solid 1px #000;
+    padding: 1em;
+}
+
+.menuDiv {
+    background-color: #fff;
+    grid-area: menu;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 1.3em;
+    padding: 1em;
+}
+
+.menuDiv a:hover {
+    color: #999;
+}
+
+.sideDiv {
+    background-color: #fff;
+    grid-area: side;
+    border-top: solid 1px #000;
+    border-right: solid 1px #000;
+    padding: 1em;
+}
+
+.mainDiv {
+    background-color: #fff;
+    grid-area: main;
+    overflow: scroll;
+    border-top: solid 1px #000;
+    padding: 1em;
+}
+
+.footerDiv {
+    background-color: #fff;
+    grid-area: footer;
+    border-top: solid 1px #000;
+    padding: 1em;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-areas:
+        "evaStrinno menu menu menu"
+        "side main main main"
+        "footer footer footer footer";
+
+    width: 1000px;
+    height: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.25em;
+}
+
+#menuUl {
+    float: right;
+}
+
+#menuUl li {
+    display: inline;
+}
+
+/* CSS specifik för index.html börjar här */
+#indexPageImg {
+    height: 350px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.45em;
+}
+
+#mainDivIndex {
+    text-align: center;
+    padding: 0;
+}
+/* CSS specifik för index.html slutar här */
+
+/* CSS specifik för galleri.html börjar här */
+#mainDivGalleri {
+    text-align: center;
+}
+
+#mainDivGalleri h4 {
+    text-align: center;
+    margin-top: 3em;
+}
+.galleryGridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.galleryGridContainer:last-child {
+    margin-bottom: 2em;
+}
+
+.galleryImgDiv {
+    width: 200px;
+    font-size: 0.8em;
+    font-family: 'Roboto', sans-serif;
+    color: #888;
+    margin-bottom: 1em;
+}
+
+.galleryImgDiv:hover {
+    color: #000;
+}
+
+.galleryImgDiv img {
+    height: auto;
+    width: 200px;
+}
+
+#sideDivGalleri {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 1em;
+}
+
+#sideDivGalleri li {
+    margin: 0.75em;
+}
+
+#footerDivGalleri a {
+    display: none;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 0.95em;
+}
+
+#sideDivGalleri a:hover {
+    color: #999;
+}
+/* CSS specifik för galleri.html slutar här */
+
+/* CSS specifik för om.html börjar här */
+#mainDivOm {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+#mainDivOm h3 {
+    text-align: center;
+}
+/* CSS specifik för om.html slutar här */
+
+/* CSS för mobilanpassning börjar här */
+@media only screen and (max-width: 650px) {
+    .gridContainer {
+        grid-template-areas:
+            "evaStrinno"
+            "menu"
+            "side"
+            "main"
+            "footer";
+    
+        width: 80%;
+        height: auto;
+    }
+
+    .evaStrinnoDiv {
+        border-right: none;
+        border-bottom: solid 1px #000;
+    }
+
+    .menuDiv {
+        padding: 0em;
+    }
+    
+    .sideDiv {
+        border-top: solid 1px #000;
+        border-right: none;
+    }
+    
+    .mainDiv {
+        border-top: none;
+    }
+    
+    .footerDiv {
+        border-top: none;
+    }
+
+    #menuUl {
+        float: none;
+    }
+    
+    #menuUl li {
+        display: block;
+        margin-bottom: 0.4em;
+    }
+
+    /* Mobilanpassad CSS specifik för index.html börjar här */
+    #mainDivIndex {
+        padding: 1em;;
+    }
+    
+    #indexPageImg {
+        height: auto;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #sideDivIndex {
+        padding: 0.2em;
+    }
+    /* Mobilanpassad CSS specifik för index.html slutar här */
+
+    /* Mobilanpassad CSS specifik för galleri.html börjar här */
+    .galleryGridContainer {
+        grid-template-columns: auto;
+    }
+
+    #mainDivGalleri h4 {
+        margin-top: 2em;
+    }
+
+    .galleryImgDiv {
+        width: 100%;
+    }
+
+    .galleryGridContainer:last-child {
+        margin-bottom: 0.5em;
+    }
+
+    #sideDivGalleri ul {
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    #sideDivGalleri li {
+        float: left;
+        margin: 0.6em;
+    }
+
+    #footerDivGalleri a {
+        display: inline;
+    }
+    /* Mobilanpassad CSS specifik för galleri.html slutar här */
+
+    /* Mobilanpassad CSS specifik för om.html börjar här */
+    #sideDivOm {
+        padding: 0em;
+    }
+    /* Mobilanpassad CSS specifik för om.html slutar här */
+    
+}
+/* CSS för mobilanpassning slutar här */
