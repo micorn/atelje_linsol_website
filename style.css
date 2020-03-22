@@ -44,20 +44,27 @@ a:visited {
 
 .evaStrinnoDiv {
     background-color: #fff;
-    grid-area: evaStrinno;
-    border-right: solid 1px #000;
     padding: 1em;
+    width: 50%;
+    float: left;
 }
 
-.menuDiv {
+.ateljeLinsolDiv {
     background-color: #fff;
-    grid-area: menu;
+    padding: 1em;
+    width: 50%;
+    float: left;
+}
+
+nav {
+    background-color: #fff;
     font-family: 'Major Mono Display', monospace;
     font-size: 1.3em;
     padding: 1em;
+    width: 100%;
 }
 
-.menuDiv a:hover {
+nav a:hover {
     color: #999;
 }
 
@@ -69,33 +76,23 @@ a:visited {
     padding: 1em;
 }
 
-.mainDiv {
+main {
     background-color: #fff;
-    grid-area: main;
     overflow: scroll;
     border-top: solid 1px #000;
     padding: 1em;
 }
 
-.footerDiv {
+footer {
     background-color: #fff;
-    grid-area: footer;
     border-top: solid 1px #000;
     padding: 1em;
 }
 
-.gridContainer {
-    display: grid;
-    grid-template-areas:
-        "evaStrinno menu menu menu"
-        "side main main main"
-        "footer footer footer footer";
-
-    width: 1000px;
-    height: 560px;
+.wrapper {
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1.25em;
 }
 
 #menuUl {
