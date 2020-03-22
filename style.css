@@ -42,27 +42,28 @@ a:visited {
     color: #000;
 }
 
-.evaStrinnoDiv {
+header {
     background-color: #fff;
-    width: 50%;
-    float: left;
 }
 
-.evaStrinnoDiv h1 {
-    float: right;
+header:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
-.ateljeLinsolDiv {
-    background-color: #fff;
-    width: 50%;
+.logoWrapper {
+    background-color: yellow;
+    width: 30%;
     float: left;
 }
 
 nav {
-    background-color: #fff;
+    background-color: pink;
     font-family: 'Major Mono Display', monospace;
     font-size: 1.3em;
-    width: 100%;
+    width: 70%;
+    float: left;
 }
 
 nav a:hover {
@@ -114,6 +115,14 @@ footer {
     text-align: center;
     margin-top: 3em;
 }
+
+.galleryDiv {
+    width: 70%;
+    float: left;
+    overflow: scroll;
+    height: 500px;
+}
+
 .galleryGridContainer {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -140,12 +149,13 @@ footer {
     width: 200px;
 }
 
-#sideDivGalleri {
+.subNav {
     font-family: 'Major Mono Display', monospace;
     font-size: 1em;
+    width: 30%;
 }
 
-#sideDivGalleri li {
+.subNav li {
     margin: 0.75em;
 }
 
@@ -155,9 +165,6 @@ footer {
     font-size: 0.95em;
 }
 
-#sideDivGalleri a:hover {
-    color: #999;
-}
 /* CSS specifik för galleri.html slutar här */
 
 /* CSS specifik för om.html börjar här */
