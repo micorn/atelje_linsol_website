@@ -70,18 +70,31 @@ nav a:hover {
     color: #999;
 }
 
+.mainNav {
+    margin-top: 4%;
+}
+
 main {
     background-color: #fff;
+    height: 86%;
+    padding-top: 4%;
+    text-align: center;
+}
+
+.content {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
 }
 
 footer {
     background-color: #fff;
 }
 
-.wrapper {
+img {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #menuUl {
