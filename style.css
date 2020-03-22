@@ -42,8 +42,17 @@ a:visited {
     color: #000;
 }
 
+.wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+}
+
 header {
     background-color: #fff;
+    border-bottom: 1px solid #000;
+    height: 10%;
 }
 
 header:after {
@@ -53,13 +62,13 @@ header:after {
 }
 
 .logoWrapper {
-    background-color: yellow;
+    background-color: #fff;
     width: 30%;
     float: left;
 }
 
 nav {
-    background-color: pink;
+    background-color: #fff;
     font-family: 'Major Mono Display', monospace;
     font-size: 1.3em;
     width: 70%;
@@ -113,9 +122,23 @@ img {
     margin-right: auto;
 }
 
+.indexGridContainer {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100%;
+}
+
+.indexImgDiv img {
+    height: auto;
+    width: 80%;
+}
+
 #mainDivIndex {
     text-align: center;
-    padding: 0;
 }
 /* CSS specifik för index.html slutar här */
 
@@ -133,7 +156,7 @@ img {
     width: 70%;
     float: left;
     overflow: scroll;
-    height: 500px;
+    height: 100%;
 }
 
 .galleryGridContainer {
@@ -146,7 +169,7 @@ img {
 }
 
 .galleryImgDiv {
-    width: 200px;
+    width: 100%;
     font-size: 0.8em;
     font-family: 'Roboto', sans-serif;
     color: #888;
@@ -159,13 +182,14 @@ img {
 
 .galleryImgDiv img {
     height: auto;
-    width: 200px;
+    width: 80%;
 }
 
 .subNav {
     font-family: 'Major Mono Display', monospace;
     font-size: 1em;
     width: 30%;
+    text-align: left;
 }
 
 .subNav li {
@@ -181,15 +205,33 @@ img {
 /* CSS specifik för galleri.html slutar här */
 
 /* CSS specifik för om.html börjar här */
-#mainDivOm {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+.omDiv {
+
 }
 
-#mainDivOm h3 {
+.omDiv h3 {
     text-align: center;
 }
 /* CSS specifik för om.html slutar här */
+
+/* CSS för aktuellt.html börjar här */
+/* CSS för aktuellt.html slutar här */
+
+/* CSS för kontakt.html börjar här */
+#contactForm {
+    padding: 1em;
+}
+
+#contactForm fieldset {
+    background-color: #eee;
+    margin-bottom: 1em;
+}
+
+#contactForm p {
+    text-align: right;
+}
+/* CSS för kontakt.html slutar här */
+
 
 /* CSS för mobilanpassning börjar här */
 @media only screen and (max-width: 650px) {
@@ -274,11 +316,6 @@ img {
         padding: 0;
         text-align: center;
         width: 100%;
-    }
-
-    #sideDivGalleri li {
-        float: left;
-        margin: 0.6em;
     }
 
     #footerDivGalleri a {
