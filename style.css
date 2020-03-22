@@ -44,14 +44,16 @@ a:visited {
 
 .evaStrinnoDiv {
     background-color: #fff;
-    padding: 1em;
     width: 50%;
     float: left;
 }
 
+.evaStrinnoDiv h1 {
+    float: right;
+}
+
 .ateljeLinsolDiv {
     background-color: #fff;
-    padding: 1em;
     width: 50%;
     float: left;
 }
@@ -60,7 +62,6 @@ nav {
     background-color: #fff;
     font-family: 'Major Mono Display', monospace;
     font-size: 1.3em;
-    padding: 1em;
     width: 100%;
 }
 
@@ -68,25 +69,12 @@ nav a:hover {
     color: #999;
 }
 
-.sideDiv {
-    background-color: #fff;
-    grid-area: side;
-    border-top: solid 1px #000;
-    border-right: solid 1px #000;
-    padding: 1em;
-}
-
 main {
     background-color: #fff;
-    overflow: scroll;
-    border-top: solid 1px #000;
-    padding: 1em;
 }
 
 footer {
     background-color: #fff;
-    border-top: solid 1px #000;
-    padding: 1em;
 }
 
 .wrapper {
@@ -109,7 +97,6 @@ footer {
     width: 350px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0.45em;
 }
 
 #mainDivIndex {
