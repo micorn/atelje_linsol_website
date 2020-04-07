@@ -211,9 +211,25 @@ img {
 .omDiv h3 {
     text-align: center;
 }
+
+.omSection {
+    margin-bottom: 3.5em;
+}
+
+.utbildningDiv ul {
+    list-style-type: none;
+    margin-left: -1.5em;
+}
 /* CSS specifik för om.html slutar här */
 
 /* CSS för aktuellt.html börjar här */
+.aktuelltDiv h3 {
+    margin-bottom: 1.5em;
+}
+
+.aktuelltDiv img {
+    margin-top: 3.5em;
+}
 /* CSS för aktuellt.html slutar här */
 
 /* CSS för kontakt.html börjar här */
