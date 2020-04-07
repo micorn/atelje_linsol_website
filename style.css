@@ -267,6 +267,10 @@ img {
     body {
         font-size: 13px;
     }
+
+    header {
+        padding-top: 0.5em;
+    }
     
     nav,
     .logoWrapper {
