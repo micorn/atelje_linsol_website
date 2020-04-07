@@ -52,6 +52,8 @@ a:visited {
 header {
     background-color: #fff;
     border-bottom: 1px solid #000;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 header:after {
