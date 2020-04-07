@@ -52,7 +52,6 @@ a:visited {
 header {
     background-color: #fff;
     border-bottom: 1px solid #000;
-    height: 10%;
 }
 
 header:after {
@@ -85,9 +84,10 @@ nav a:hover {
 
 main {
     background-color: #fff;
-    height: 86%;
+    height: 87%;
     padding-top: 4%;
     text-align: center;
+    overflow: auto;
 }
 
 .content {
@@ -205,10 +205,6 @@ img {
 /* CSS specifik för galleri.html slutar här */
 
 /* CSS specifik för om.html börjar här */
-.omDiv {
-
-}
-
 .omDiv h3 {
     text-align: center;
 }
@@ -230,45 +226,39 @@ img {
 #contactForm p {
     text-align: right;
 }
+
+#customer label {
+    float:left; width:125px; text-align:left; margin-top:8px;
+}
+
+#customer input {
+    display:block; margin-top:8px;
+}
+
+#message {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
 /* CSS för kontakt.html slutar här */
 
 
 /* CSS för mobilanpassning börjar här */
 @media only screen and (max-width: 650px) {
-    .gridContainer {
-        grid-template-areas:
-            "evaStrinno"
-            "menu"
-            "side"
-            "main"
-            "footer";
+    body {
+        font-size: 13px;
+    }
     
-        width: 80%;
-        height: auto;
+    nav,
+    .logoWrapper {
+        width: 100%;
+        float: none;
     }
 
-    .evaStrinnoDiv {
-        border-right: none;
-        border-bottom: solid 1px #000;
-    }
-
-    .menuDiv {
-        padding: 0em;
+    .logoWrapper {
+        text-align: center;
     }
     
-    .sideDiv {
-        border-top: solid 1px #000;
-        border-right: none;
-    }
-    
-    .mainDiv {
-        border-top: none;
-    }
-    
-    .footerDiv {
-        border-top: none;
-    }
-
     #menuUl {
         float: none;
     }
@@ -278,20 +268,17 @@ img {
         margin-bottom: 0.4em;
     }
 
-    /* Mobilanpassad CSS specifik för index.html börjar här */
-    #mainDivIndex {
-        padding: 1em;;
-    }
-    
-    #indexPageImg {
-        height: auto;
+    .content img {
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
     }
 
-    #sideDivIndex {
-        padding: 0.2em;
+    /* Mobilanpassad CSS specifik för index.html börjar här */
+    .indexGridContainer {
+        grid-template-columns: auto;
+    }
+
+    .subNav {
+        width: 100%;
     }
     /* Mobilanpassad CSS specifik för index.html slutar här */
 
@@ -304,18 +291,8 @@ img {
         margin-top: 2em;
     }
 
-    .galleryImgDiv {
-        width: 100%;
-    }
-
     .galleryGridContainer:last-child {
         margin-bottom: 0.5em;
-    }
-
-    #sideDivGalleri ul {
-        padding: 0;
-        text-align: center;
-        width: 100%;
     }
 
     #footerDivGalleri a {
@@ -324,9 +301,9 @@ img {
     /* Mobilanpassad CSS specifik för galleri.html slutar här */
 
     /* Mobilanpassad CSS specifik för om.html börjar här */
-    #sideDivOm {
-        padding: 0em;
-    }
+    .omDiv li{
+        text-align: left;
+        }
     /* Mobilanpassad CSS specifik för om.html slutar här */
     
 }
