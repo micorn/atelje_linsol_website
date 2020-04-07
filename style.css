@@ -229,35 +229,16 @@ img {
 
 .aktuelltDiv img {
     margin-top: 3.5em;
+    margin-bottom: 5em;
 }
 /* CSS för aktuellt.html slutar här */
 
 /* CSS för kontakt.html börjar här */
-#contactForm {
-    padding: 1em;
-}
-
-#contactForm fieldset {
+.kontaktDiv {
     background-color: #eee;
     margin-bottom: 1em;
-}
-
-#contactForm p {
-    text-align: right;
-}
-
-#customer label {
-    float:left; width:125px; text-align:left; margin-top:8px;
-}
-
-#customer input {
-    display:block; margin-top:8px;
-}
-
-#message {
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
+    padding: 1em;
+    overflow: auto;
 }
 /* CSS för kontakt.html slutar här */
 
