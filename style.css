@@ -137,6 +137,7 @@ img {
 .indexImgDiv img {
     height: auto;
     width: 80%;
+    margin-bottom: 5em;
 }
 
 #mainDivIndex {
@@ -210,6 +211,10 @@ img {
 /* CSS specifik för om.html börjar här */
 .omDiv h3 {
     text-align: center;
+}
+
+.omDiv img {
+    margin-bottom: 5em;
 }
 
 .omSection {
