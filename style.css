@@ -285,6 +285,7 @@ img {
     /* Mobilanpassad CSS specifik för index.html börjar här */
     .indexGridContainer {
         grid-template-columns: auto;
+        margin-top: 6em;
     }
 
     .subNav {
